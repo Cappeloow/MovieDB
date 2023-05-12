@@ -1,6 +1,7 @@
 header {
     display:flex;
     background-color: rgba(52, 126, 152, 0.438);
+    width:100%;
 }
 header > h1 {
     font-size:4rem;
