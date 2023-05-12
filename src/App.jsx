@@ -1,7 +1,9 @@
+import React from "react"
+import Header from "./components/Header/Header"
 export default function App () {
 return (
 <div>
-<h1>MOVIEDB</h1>
+<Header />
 </div>
 )
 }
