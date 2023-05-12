@@ -1,0 +1,10 @@
+header {
+    display:flex;
+    background-color: rgba(208, 204, 211, 0.438);
+}
+header > h1 {
+    font-size:4rem;
+    padding:20px;
+    margin:10px;
+    width:50%;
+}

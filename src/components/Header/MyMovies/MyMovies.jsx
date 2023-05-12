@@ -1,8 +1,9 @@
 import { FaFortAwesome } from 'react-icons/fa';
+import "./MyMovies.css"
 export default function MyMovies () {
    return (
-    <div>
-    <h1><FaFortAwesome /></h1>
+    <div className="headerIcon">
+        <a href="/"><FaFortAwesome /></a>
     </div>
    )
 }
