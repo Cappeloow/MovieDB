@@ -4,6 +4,13 @@ import { Route, Routes } from "react-router-dom";
 import MarkAsSeenBtn from "../MarkAsSeenBtn/MarkAsSeenBtn";
 export default function MovieCard () {
     const [movies, setMovies] = useState([]);
+    const [seen, setSeen] = useState([]);
+
+
+    function haveSeen (movie){
+        console.log(`this is ${movie}`);
+    }
+
     useEffect(() => {
         async function fetchMovies() {
             const response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${import.meta.env.VITE_API_KEY}`);
@@ -23,7 +30,7 @@ export default function MovieCard () {
                 <div className="cardDivs">
                   <h2>{movie.title}</h2>
                   <p>{movie.vote_average}</p>
-                  <MarkAsSeenBtn />
+                  <MarkAsSeenBtn onClick={() => haveSeen(movie.title)}/>
                 </div>
               </a>
             );
