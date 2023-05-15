@@ -1,10 +1,22 @@
 import { useState, useEffect } from "react"
+import { useParams } from "react-router-dom"
+export default function MovieDetails(){
+const {id} = useParams();
+const [movie, setMovie] = useState(null);
 
-export default async function MovieDetails(){
-
+useEffect(()=> {
+    async function FetchMovie(){
+        const response = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${import.meta.env.VITE_API_KEY}`);
+        const data = await response.json();
+        console.log(data);
+        setMovie(data);
+    }
+    FetchMovie();
+},[id]);
 return (
     <div>
-        <p>MOVIE</p>
+        {movie && <h1>{movie.title}</h1>}
+        {movie !== null && <p>{movie.overview}</p>}
     </div>
 )
 }

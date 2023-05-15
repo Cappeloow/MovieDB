@@ -10,7 +10,6 @@ export default function Main () {
     
     return ( 
     <main>
-    <FilterDropdown/>
     <Routes>
     <Route path='/' element={<MovieList />}/>
     <Route path=':id' element={<MovieDetails />}/>
