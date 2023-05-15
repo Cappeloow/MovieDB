@@ -30,6 +30,9 @@ export default function MovieCard () {
                 <div className="cardDivs">
                   <h2>{movie.title}</h2>
                   <p>{movie.vote_average}</p>
+                  <div>
+                  <img src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={movie.title} />
+                  </div>
                   <MarkAsSeenBtn onClick={() => haveSeen(movie.title)}/>
                 </div>
               </a>
