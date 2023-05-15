@@ -4,11 +4,14 @@
     align-items: center;
     justify-content: center;
 }
-.cards > div {
+
+
+.cardDivs{
     margin:10px;
     padding:20px;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(111, 185, 169);
     width:240px;
     height:240px;
     border-radius:5px;
+    cursor: pointer;
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import './main.css'
-import MarkAsSeenBtn from "../MarkAsSeenBtn/MarkAsSeenBtn";
 import FilterDropdown from "../FilterDropdown/FilterDropdown";
 import About from "../About/About";
 import MovieDetails from "../MovieDetails/MovieDetails";
