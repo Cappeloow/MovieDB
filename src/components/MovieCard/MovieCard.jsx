@@ -6,15 +6,10 @@ export default function MovieCard (props) {
   const {movie } = props;
       return (
         <div className="cards">
-              <a href={"/" + movie.id} key={movie.id}>
-                <div className="cardDivs">
-                  <h2>{movie.title}</h2>
-                  <p>{movie.vote_average}</p>
-                  <div>
+              <a href={"/" + movie.id}>
+ 
                   <img src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={movie.title} />
-                  </div>
-                  <MarkAsSeenBtn onClick={() => haveSeen(movie.title)}/>
-                </div>
+                  <MarkAsSeenBtn className="MarkAsSeen" onClick={() => haveSeen(movie.title)}/>
               </a>
         </div>
       );
