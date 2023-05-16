@@ -1,15 +1,16 @@
 .cards{
-    margin:10px;
+    margin:20px;
     background-color: rgb(235, 235, 235);
-    width:240px;
-    height:240px;
+    width:200px;
+    height:300px;
     border-radius:5px;
     cursor: pointer;
-    border:2px solid black;   
+    display:flex;
+    flex-direction: column;
 }
 
-img {
+#MovieListCards {
     width:100%;
-    height:200px;
-    object-fit:cover;
+    height:100%;
+    object-fit: contain;
 }
