@@ -1,10 +1,11 @@
-export default function FilterDropdown() {
+import React from "react"
+export default function FilterDropdown({value, onChange}) {
     return (
         <>
-       <select name="" id="">
-        <option value="">Popular</option>
-        <option value="">Top Rated</option>
-        <option value="">Upcoming</option>
+       <select value={value} onChange={onChange}>
+        <option value="popular">Popular</option>
+        <option value="top_rated">Top Rated</option>
+        <option value="upcoming">Upcoming</option>
        </select>
         </>
     )
