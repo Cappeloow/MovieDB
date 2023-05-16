@@ -6,6 +6,7 @@ import MovieDetails from "../MovieDetails/MovieDetails";
 import MovieList from "../MovieList/MovieList";
 import Contact from "../Contact/Contact";
 import { Routes, Route } from "react-router-dom";
+
 export default function Main () {
     
     return ( 

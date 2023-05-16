@@ -17,6 +17,7 @@ return (
     <div>
         {movie && <h1>{movie.title}</h1>}
         {movie !== null && <p>{movie.overview}</p>}
+        {movie && <img src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={movie.title} />}
     </div>
 )
 }
