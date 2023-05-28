@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import MovieCard from "../MovieCard/MovieCard"
 import FilterDropdown from "../FilterDropdown/FilterDropdown"
 import './MovieList.css'
+import { useMovieContext } from "../../context/MyMoviesContext";
+
 export default function MovieList(){
 const [movies, setMovies] = useState([]);
 const [category, setCategory] = useState('popular');
